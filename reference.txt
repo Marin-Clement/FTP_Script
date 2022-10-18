@@ -148,7 +148,10 @@ AdminControlsEngine off
    DirFakeUser	on ftp
    DirFakeGroup on ftp 
    RequireValidShell		off
- 
+  
+   <Limit LOGIN>
+    AllowAll
+   </Limit>
    # Limit the maximum number of anonymous logins
    MaxClients			10
  
@@ -182,6 +185,10 @@ AdminControlsEngine off
 # i.e. backup files created by your editor, too !!!
 # Eventually create file patterns like this: /etc/proftpd/conf.d/*.conf
 
+  <Limit LOGIN>
+    AllowGroup ftpuser
+    DenyAll
+  </Limit>
 
 Include /etc/proftpd/conf.d/
 TLSOptions NoSessionReuseRequired
