@@ -1,5 +1,5 @@
 # ./bin/bash
-git clone https://github.com/Marin-Clement/FTP_Script.git ; sh FTP_Script/FtpInstall.sh
+#git clone https://github.com/Marin-Clement/FTP_Script.git ; sh FTP_Script/FtpInstall.sh
 #Set user to root for commands
 echo "Password needed to make changes to your machine"
 su /
